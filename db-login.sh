@@ -1,0 +1,1 @@
+docker exec -it local-mysql mysql -uroot -p
