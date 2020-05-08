@@ -16,5 +16,7 @@ The tutorial uses Node.js, Express and MySQL database. I used a MySQL Server run
 
 ## Sequelize Notes
 
- 1. Install sequelize and sequelize-cli
- 2.  
+ 1. Install sequelize, sequelize-cli and express
+ 2. Run `sequelize init`
+ 3. Create `connection.js`
+ 4. 
