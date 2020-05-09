@@ -18,6 +18,6 @@ app.get('/', (req, res) => {
 
 // Gig routes
 
-app.use('/gigs', require('./routes/gigs'));
+// app.use('/gigs', require('./routes/gigs'));
 
 app.listen(port,  () => { console.log(`Server started on ${port}`); });
