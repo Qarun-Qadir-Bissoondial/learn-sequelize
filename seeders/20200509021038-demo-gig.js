@@ -9,6 +9,10 @@ const generateTechnologies = (number) => {
   let str = '';
 
   for (let i = 0; i < number - 1; i++) {
+    let tech = random(techs);
+    while (str.includes(tech)) {
+      tech = random(techs);
+    }
     str = str.concat(`${random(techs)}, `)
   }
   
@@ -24,7 +28,7 @@ const generateGigs = (number) => {
       title: `${fname} ${lname}`,
       technologies: generateTechnologies(3),
       description: 'Always Lorem Ipsum',
-      budget: (Math.random() * 1000).toString(),
+      budget: (Math.random() * 1000).toFixed(2).toString(),
       contact_email: faker.internet.email(fname, lname, 'example.com'),
     }
   })
